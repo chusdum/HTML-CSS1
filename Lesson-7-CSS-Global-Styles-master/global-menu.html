@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Global Menu</title>
+
+    <style>
+        body
+            {
+                font-family: Arial;
+                background-color: #333;
+                margin: 0;
+
+            }
+        ul  
+            {
+                list-style: none;  /*deconectam silul din lista, adica punctele din fata*/
+                margin: 0;
+                padding: 0;
+                
+            }
+        a
+            {   
+                color: rgb(255, 250, 240);
+                text-decoration: none;    
+            }
+        li
+            {
+                border-bottom: 1px solid #555 ;
+                padding: 15px ;
+            }
+        #main
+            {
+                width: 200px;
+                background-color: #444;
+            }
+        .active
+            {
+                background-color: rgba(31, 255, 1, 0.698);
+                border-left: 5px solid rgb(255, 255, 255);
+                padding-left: 10px;
+            }
+        .no-border
+            {
+                border-bottom: 0;
+            }
+    </style>
+
+
+</head>
+<body>
+    <nav id="main">
+        <ul>
+            <li><a href="">About Us</a></li>
+            <li class="active"><a href="">Services</a></li>
+            <li><a href="">Team</a></li>
+            <li><a href="">Support</a></li>
+            <li class="no-border"><a href="">Contact</a></li>
+        </ul>
+    </nav>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+# Lesson-5-Forms
+
+comand panel => ctrl + shift + p
+
+plugins: emmet
+
+    comenzi emmet : 
+                    ! + tab  - creem scheletul HTML
+                  a*5 + tab  - creem 5 lincuri deodata
+            table>tr>td+tab  - creem deodata o ierarhie de orice taguri (se poate de combinat)
+        table>tr*3>td*3+tab  - creem o tabela 3x3

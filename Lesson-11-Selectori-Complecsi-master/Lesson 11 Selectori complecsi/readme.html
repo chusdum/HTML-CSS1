@@ -1,0 +1,72 @@
+COMPLEX /ADVANCED /COMPOUND
+    - reprezinta formule ce combina alte tipuri de selctori cu ajutorul unui operator/operatori special(i):
+    =======================================================================================================    
+    * grouping -enumerare sau grupare
+                SEL1, SEL2, Sel3 ..... {}
+
+                p, a, li, .first, :hover
+                {
+                    color:red
+                }
+    ========================================================================================================
+    * direct descendant 
+                stilul se aplica doar pentru ultima pozitie , iar formula insa-si reprezinta calea pina la ultimul element
+    
+        SEL1>SEL2>SEL3...>SELn{}
+
+    ========================================================================================================
+    * descendant - se aplica stilurile ultimului element , iar intregul selector este calea aproximata
+        SEL1 SEL2 SEL3 {}
+    ========================================================================================================
+    * intersection - combina (toate fragmentele se lipesc)
+                SEL1SEL2SEL3 {} simultan satisfac toti selectorii
+        <style>
+            li.first{color: red;}
+        </style>
+
+        <ul>
+            <li class="first">
+                <li class="first">Lorem, ipsum.</li>
+                <li>Aut, voluptas.</li>
+                <li class="last">Tempora, officia?</li>
+            </li>
+        </ul>
+        <ul>
+            <li class="first">
+                <li class="first">Culpa, non!</li>
+                <li>Dicta, ad.</li>
+                <li class="last">Officia, alias!</li>
+            </li>
+        </ul>
+    ========================================================================================================
+    * next neightbour -afecteaza ultima pozitie , dar formula este calea exacta de la un vecin la altul
+        SEL1+SEL2+SEL3 {}
+    
+        <style>
+            h2+p+p{color:red}
+        </style>
+
+        <h2></h2>
+        <p></p>
+        <p></p> 
+        <p></p>
+
+        <h2></h2>
+        <p></p>
+        <p></p>
+    ========================================================================================================
+    * attribute selector
+        [attribute="value"] {...} browserul cauta toate atributele enumerate si aplica ceva stiluri
+
+        <style>
+            [width=300px]{
+                color:red;
+            }
+
+            [id="box"]{color:red;}
+        </style>
+    ========================================================================================================
+    *     universal/all
+        pentru toate
+
+        * {...}

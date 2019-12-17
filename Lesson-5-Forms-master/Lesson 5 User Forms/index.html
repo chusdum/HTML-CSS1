@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>HTML FORMS</title>
+</head>
+<body>
+        <form action="thankyou.html">
+        
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <table  align="center">
+                <tr>
+                    <td>
+                        <label for="firstname">Firstname</label>
+                    </td>
+                    <td>
+                        <input autofocus type="text" id="firstname">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="lastname">Lastname</label>
+                    </td>
+                    <td>
+                        <input type="text" id="lastname">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="dateofbirth">dateofbirth</label>
+                    </td>
+                    <td>
+                        <input type="date" id="dateofbirth">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="country">Country</label>
+                    </td>
+                    <td>
+                        <select name="Country" id="country">
+                            
+                            <option value="Select Country">Select Country</option>
+                            <optgroup label="Europe">
+                            <option value="Moldova">Moldova</option>
+                            <option value="Romania">Romania</option>
+                            <option value="Ukraine">Ukraine</option>
+                            <option value="UK">UK</option>
+                            <option value="Russia">Russia</option>
+                            </optgroup>
+                            <optgroup label="Asia">
+                                <option value="China">China</option>
+                                <option value="India">India</option>
+                                <option value="Turkey">Turkey</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label >Gender:</label>
+                    </td>
+                    <td>
+                        <input type="radio" id="gender" name="gender">Male 
+                        <input type="radio" id="gender" name="gender">Female
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <label for="About">About</label>
+                    </td>
+                    <td>
+                        <textarea name="About" id="About" cols="30" rows="5"></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="Username">Username</label>
+                    </td>
+                    <td>
+                        <input autofocus type="text" id="Username">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="Password">Password</label>
+                    </td>
+                    <td>
+                        <input autofocus type="password" id="Password">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input autofocus type="checkbox" id="checkbox"> I agree with <a href="terms.html" target="_blank">this terms</a>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <button>Submit!</button>
+                    </td>
+                    <td></td>
+                </tr>
+            </table>
+
+        </form>
+</body>
+</html>
+
+<!-- 
+    <optgroup>
+    <option value=""></option>
+    <option value=""></option>                                                      grupam dupa sens
+    <option value=""></option>
+</optgroup> 
+
+<td>
+    <input type="radio" id="gender" name="gender">Male                              
+    <input type="radio" id="gender" name="gender">Female        
+</td>
+
+-->

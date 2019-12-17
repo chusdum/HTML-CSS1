@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lesson7 Global CSS styles</title>
+
+    <style>
+        /* Global Styles*/
+        /*tag selector atinge TOATE tagurile */
+        body
+            {
+                background-color: #333;
+                width: 360px;
+            }
+        p
+            {
+                width: 100px;
+                height: 100px;
+                background-color: forestgreen;
+                float: left ;
+                margin: 10px;
+            }
+        /*class selector - grupeaza*/
+        
+        .row
+            {
+                background-color: brown;
+
+            }
+        .col
+            {
+                border-radius: 50px;
+            }
+        /*id selector  - un singur element*/ 
+        #first
+            {
+                border-radius: 50px 0 0 0;
+            }
+        #last
+            {
+                border-radius: 0 0 50px 0;
+            }
+        .diagonala1
+                    {
+                        border-radius: 0 50px 0 0;
+                    }
+        .diagonala2
+                    {
+                        border-radius: 0 0 0 50px;
+                    }
+    </style>
+    
+
+</head>
+<body>
+    <p id="first">1</p>
+    <p class="col">2</p>
+    <p class="diagonala1">3</p>
+    <p class="row">4</p>
+    <p class="row col">5</p>
+    <p class="row">6</p>
+    <p class="diagonala2">7</p>
+    <p class="col">8</p>
+    <p id="last">9</p>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Global Galery</title>  
+    <!-- <title></title>    titlul documentului si descrierea paginii in motoarele de cautare-->
+    <!-- 
+        <link rel="role" href="url"/>   resursa ce se conecteaza automat
+        href - adresa de unde se ia resurse
+        rel  - rolul adresei
+    -->
+    <link rel="icon"  href="http://icons.iconarchive.com/icons/papirus-team/papirus-devices/64/camera-photo-icon.png">
+<style>
+    body
+    {
+        background-color: #333;
+    }
+    #container
+    {
+        border-bottom:10px solid #666;
+        text-align: center;
+        padding-bottom: 80px;
+        padding-top: 55px;
+    }
+
+    img
+    {
+        margin-left: -187px;
+        margin-right: -152px;
+        border:5px solid rgb(2, 57, 144);
+        padding: 30px;
+        background-color: #777;
+        box-shadow: 0 0 5px 3px #111;
+        transition: 0.5s;
+    }
+
+    .i-1{transform: rotate(15deg);}
+    .i-2{transform: rotate(25deg);}
+    .i-3{transform: rotate(35deg);}
+    .i-4{transform: rotate(45deg);}
+    .i-5{transform: rotate(55deg);}
+
+    img:hover { 
+                border-color: rgba(33, 255, 118, 0.842);
+                /* transform: rotate(3600deg) */
+                transform: skew(-0.06turn, 18deg);
+            }
+</style>
+    
+
+</head>
+<body>
+    <div id="container">
+        <img class="i-1" src="https://picsum.photos/id/692/300/500">
+        <img class="i-2" src="https://picsum.photos/id/281/300/500">
+        <img class="i-3" src="https://picsum.photos/id/381/300/500">
+        <img class="i-4" src="https://picsum.photos/id/685/300/500">
+        <img class="i-5" src="https://picsum.photos/id/263/300/500">
+    </div>
+</body>
+</html>

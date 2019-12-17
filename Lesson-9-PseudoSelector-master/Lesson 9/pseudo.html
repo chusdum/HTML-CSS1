@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>PseudoSelector</title>
+
+    <style>
+        body{background-color: #333;}
+        .player
+        {
+            margin-top: 50px;
+            text-align: center;
+        }
+        form
+        {
+            margin-top: 20px;
+        }
+        button:nth-child(2)
+        {
+            padding: 15px;
+            border-radius: 50px;
+            margin-left: 10px;
+            margin-right: 10px;
+            
+        }
+        button:nth-child(2):hover
+        {
+            background-color: rgba(5, 2, 206, 0.609);
+        }
+        button:nth-child(2):active
+        {
+            background-color: rgb(1, 175, 255);
+        }
+        button:first-child::after
+        {
+            content: "\2022";
+            opacity: 0.5;
+        }
+        button:last-child::before
+        {
+            content: "\2022";
+            opacity: 0.5;
+        }
+        button
+        {
+            border-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="player">
+        <!-- youtube+iframe -->
+        <iframe width="983" height="553" src="https://www.youtube.com/embed/PyYlB_MVuLM" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <form>
+            <button>&#10096;</button>
+            <button>&#9654;</button>
+            <button>&#10097;</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Smile with CSS and Pseudo</title>
+
+    <style>
+        body{background-color: #333;}
+
+        .smile
+        {
+            background-color: yellow;
+            width: 200px;height: 200px;
+            margin-left: auto;margin-right: auto;
+            margin-top: 150px;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 100px;
+            line-height: 130px;
+            border-top: 20px solid brown;
+        }
+        .smile::before
+        {
+            content: "\2022";
+            /* margin-right: 10px; */
+            color: cadetblue;
+            border-right: 2px solid black;
+            border-bottom: 2px solid black;
+            padding: 10px;
+            
+        }
+        .smile::after 
+        {
+            content: "\2022";
+            /* margin-left: 10px; */
+            color: cadetblue;
+            border-left: 2px solid black;
+            border-bottom: 2px solid black;
+            padding: 10px;
+        }
+        .smile:hover{background-color: rgb(94, 255, 0);}
+    </style>
+
+</head>
+<body>
+    
+    <div class="smile">
+
+    </div>
+</body>
+</html>
