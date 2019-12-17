@@ -1,0 +1,48 @@
+body{background-color: #333;}
+#fon{
+    background-color: white;
+    width: 200px;
+    height: 180px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+#logo1{
+    background-color: orange;
+    border: 10px solid white;
+    height: 160px;
+    border-radius: 30px 30px 100px 100px;
+}
+
+#u1{
+    background-color: #fff;
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+    height: 110px;
+    border-radius: 0px 0px 100px 100px;
+}
+#u2{
+    background-color: orange;
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 90px;
+    border-radius: 0px 0px 100px 100px;
+
+}
+
+#layer{
+    background-color: orange;
+    height: 30px;
+    padding-right: 110px;
+}
+#position{
+    margin-left: 92px;
+}
+#fragment{
+    background-color: #fff;
+    height: 20px;
+    margin-top: 20px;
+    padding-right: 20px;
+    transform: rotate(15deg);
+}
